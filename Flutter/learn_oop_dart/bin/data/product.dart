@@ -6,6 +6,10 @@ class Product {
   int? getQuantity() {
     return _quantity;
   }
+
+  String toString() {
+    return "Product{id=$id, nama=$name, quantity = $_quantity}";
+  }
 }
 
 void main() {
