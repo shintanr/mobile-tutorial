@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(body: Text('shinta')));
+        home: Scaffold(
+          body: SafeArea(child: Text('Betelgeushin')),
+        ));
   }
 }
 
