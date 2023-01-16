@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/font_style.dart';
+import 'font_style.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,8 +37,11 @@ class MyApp extends StatelessWidget {
                   image: AssetImage('assets/img/paktani.png'),
                   height: 261,
                 ),
-                Text('Mari Bertani Bersama Kami'),
-                Text('Olah Panenmu, bersama Taniku, Pertanian Maju')
+                Text(
+                  'Mari Bertani Bersama Kami',
+                  style: mainHeader,
+                ),
+                Text('Olah Tanahmu, bersama Taniku, Pertanian Maju')
               ],
             ),
           )),
