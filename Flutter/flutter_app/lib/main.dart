@@ -18,10 +18,11 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text("Taniku"),
-            backgroundColor: Colors.green,
-            actions: <Widget>[Icon(Icons.mail)],
-          ),
+              title: Text("Taniku"),
+              backgroundColor: Colors.green,
+              actions: <Widget>[
+                IconButton(onPressed: () {}, icon: Icon(Icons.mail))
+              ]),
           body: SafeArea(
             child: Text(""),
           ),
