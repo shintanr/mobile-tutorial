@@ -24,8 +24,18 @@ class MyApp extends StatelessWidget {
                 IconButton(onPressed: () {}, icon: Icon(Icons.mail))
               ]),
           body: SafeArea(
-            child: Text(""),
-          ),
+              child: Container(
+            child: Column(
+              children: <Widget>[
+                Image(
+                  image: AssetImage('assets/img/tani.jpg'),
+                  height: 261,
+                ),
+                Text('Mari Bertani Bersama Kami'),
+                Text('Olah Panenmu, bersama Taniku, Pertanian Maju')
+              ],
+            ),
+          )),
         ));
   }
 }
