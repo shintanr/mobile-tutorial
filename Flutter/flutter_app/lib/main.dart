@@ -11,12 +11,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          appBar: AppBar(title: Text("Taniku"), backgroundColor: Colors.green),
+          appBar: AppBar(
+            title: Text("Taniku"),
+            backgroundColor: Colors.green,
+            actions: <Widget>[Icon(Icons.mail)],
+          ),
           body: SafeArea(
             child: Text(""),
           ),
