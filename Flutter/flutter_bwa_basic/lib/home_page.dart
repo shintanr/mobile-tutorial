@@ -19,6 +19,7 @@ class Homepage extends StatelessWidget {
                 horizontal: 30,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,6 +39,17 @@ class Homepage extends StatelessWidget {
                           fontWeight: FontWeight.w300,
                           fontSize: 12,
                         ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.favorite,
+                        color: Colors.red[700],
+                      ),
+                      Text(
+                        '4.5',
                       ),
                     ],
                   ),
