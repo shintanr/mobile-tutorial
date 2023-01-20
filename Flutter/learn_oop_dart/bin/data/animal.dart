@@ -2,7 +2,7 @@
 // kelas turunan wajib membuat method itu
 
 abstract class Animal {
-  String? name;
+  String? name; // nullable safety
 
   void run(); // wajib di override/implementasi di kelas turunannya
 
@@ -10,7 +10,22 @@ abstract class Animal {
 
 class Cat extends Animal {
   // override methode
+  @override
   void run() {
     print('cat $name is running');
+  }
+}
+
+abstract class Plant {
+  String? species;
+
+  bool pollen();
+}
+
+class MangoTree extends Plant {
+  @override // anotation untuk penanda
+  bool pollen() {
+    print('yes, the mango is pollen');
+    return true;
   }
 }
