@@ -9,3 +9,13 @@ class City extends Location {
     this.name = name;
   }
 }
+
+abstract class Provinsi {
+  String? name;
+}
+
+class Kabupaten extends Provinsi {
+  Kabupaten(String name) {
+    this.name = name;
+  }
+}
