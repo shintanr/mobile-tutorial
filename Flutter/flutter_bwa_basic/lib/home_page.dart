@@ -22,7 +22,7 @@ class Homepage extends StatelessWidget {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         'Raja Ampat',
                         style: TextStyle(
@@ -64,7 +64,7 @@ class Homepage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.call,
                         color: Color(0xff00A3FF),
@@ -82,7 +82,7 @@ class Homepage extends StatelessWidget {
                     ],
                   ),
                   Column(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.near_me,
                         color: Color(0xff00A3FF),
@@ -100,7 +100,7 @@ class Homepage extends StatelessWidget {
                     ],
                   ),
                   Column(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.share,
                         color: Color(0xff00A3FF),
