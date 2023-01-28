@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_bwa_chatty/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_bwa_chatty/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_bwa_chatty/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/fluter_bwa_airplane/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/fluter_bwa_airplane/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/fluter_bwa_airplane/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_bwa_basic/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_bwa_basic/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_bwa_basic/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/flutter_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/learn_oop_dart/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/learn_oop_dart/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter/learn_oop_dart/.pub" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
