@@ -37,12 +37,93 @@ class DetailPage extends StatelessWidget {
       );
     }
 
+    Widget content() {
+      return Container(
+        width: double.infinity,
+        margin: EdgeInsets.symmetric(
+          horizontal: defaultMargin,
+        ),
+        child: Column(
+          children: [
+            //NOTE EMBLEM
+            Container(
+              width: 108,
+              height: 24,
+              margin: EdgeInsets.only(top: 30),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(
+                    'assets/icon_emblem.png',
+                  ),
+                ),
+              ),
+            ),
+
+            // NOTE TITLE
+            Container(
+              margin: EdgeInsets.only(top: 256),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Lake Ciliwung',
+                          style: whiteTextStyle.copyWith(
+                            fontSize: 24,
+                            fontWeight: semiBold,
+                          ),
+                        ),
+                        Text(
+                          'Tanggerang',
+                          style: whiteTextStyle.copyWith(
+                            fontSize: 16,
+                            fontWeight: light,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 20,
+                        height: 20,
+                        margin: EdgeInsets.only(right: 2),
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                              'assets/icon_star.png',
+                            ),
+                          ),
+                        ),
+                      ),
+                      Text(
+                        '4.8',
+                        style: whiteTextStyle.copyWith(
+                          fontWeight: medium,
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: kBackgroundColor,
       body: Stack(
         children: [
           backgroundImage(),
           customShadow(),
+          content(),
         ],
       ),
     );
