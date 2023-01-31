@@ -114,13 +114,15 @@ class BonusPage extends StatelessWidget {
     );
   }
 
-  Widget startButton() {
+  Widget startButton(BuildContext context) {
     return Container(
       width: 220,
       height: 55,
       margin: EdgeInsets.only(top: 50),
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/main');
+        },
         style: TextButton.styleFrom(
           backgroundColor: kPrimaryColor,
           shape: RoundedRectangleBorder(
@@ -151,7 +153,7 @@ class BonusPage extends StatelessWidget {
               bonusCard(),
               title(),
               subTitle(),
-              startButton(),
+              startButton(context),
             ],
           ),
         ));
