@@ -1,6 +1,8 @@
 import 'package:fluter_bwa_airplane/shared/theme.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/seat_item.dart';
+
 class ChooseSeatPage extends StatelessWidget {
   const ChooseSeatPage({Key? key}) : super(key: key);
 
@@ -96,8 +98,11 @@ class ChooseSeatPage extends StatelessWidget {
           children: [
             // NOTE: seat indicator
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
+                Container(
+                  width: 48,
+                  height: 48,
                   child: Center(
                     child: Text(
                       'A',
@@ -105,7 +110,9 @@ class ChooseSeatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Expanded(
+                Container(
+                  width: 48,
+                  height: 48,
                   child: Center(
                     child: Text(
                       'B',
@@ -113,7 +120,9 @@ class ChooseSeatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Expanded(
+                Container(
+                  width: 48,
+                  height: 48,
                   child: Center(
                     child: Text(
                       '',
@@ -121,7 +130,9 @@ class ChooseSeatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Expanded(
+                Container(
+                  width: 48,
+                  height: 48,
                   child: Center(
                     child: Text(
                       'C',
@@ -129,7 +140,9 @@ class ChooseSeatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Expanded(
+                Container(
+                  width: 48,
+                  height: 48,
                   child: Center(
                     child: Text(
                       'D',
@@ -139,6 +152,33 @@ class ChooseSeatPage extends StatelessWidget {
                 ),
               ],
             ),
+
+            // NOTE : SEAT 1
+
+            Container(
+              margin: EdgeInsets.only(top: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SeatItem(),
+                  SeatItem(),
+                  Container(
+                    width: 48,
+                    height: 48,
+                    child: Center(
+                      child: Text(
+                        '1',
+                        style: greyTextStyle.copyWith(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SeatItem(),
+                  SeatItem(),
+                ],
+              ),
+            )
           ],
         ),
       );
