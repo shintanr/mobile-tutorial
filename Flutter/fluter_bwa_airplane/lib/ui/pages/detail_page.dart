@@ -1,4 +1,5 @@
 import 'package:fluter_bwa_airplane/shared/theme.dart';
+import 'package:fluter_bwa_airplane/ui/pages/choose_seat_page.dart';
 import 'package:fluter_bwa_airplane/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -235,7 +236,14 @@ class DetailPage extends StatelessWidget {
                   // NOTE: BOOK BUTTON
                   CustomButton(
                     title: 'Book Now',
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ChooseSeatPage(),
+                        ),
+                      );
+                    },
                     width: 170,
                   )
                 ],
