@@ -160,8 +160,12 @@ class ChooseSeatPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  SeatItem(),
-                  SeatItem(),
+                  SeatItem(
+                    status: 2,
+                  ),
+                  SeatItem(
+                    status: 2,
+                  ),
                   Container(
                     width: 48,
                     height: 48,
@@ -174,8 +178,146 @@ class ChooseSeatPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SeatItem(),
-                  SeatItem(),
+                  SeatItem(
+                    status: 0,
+                  ),
+                  SeatItem(
+                    status: 2,
+                  ),
+                ],
+              ),
+            ),
+
+            // SEAT 2
+            Container(
+              margin: EdgeInsets.only(top: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SeatItem(
+                    status: 0,
+                  ),
+                  SeatItem(
+                    status: 0,
+                  ),
+                  Container(
+                    width: 48,
+                    height: 48,
+                    child: Center(
+                      child: Text(
+                        '2',
+                        style: greyTextStyle.copyWith(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SeatItem(
+                    status: 0,
+                  ),
+                  SeatItem(
+                    status: 2,
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SeatItem(
+                    status: 1,
+                  ),
+                  SeatItem(
+                    status: 1,
+                  ),
+                  Container(
+                    width: 48,
+                    height: 48,
+                    child: Center(
+                      child: Text(
+                        '3',
+                        style: greyTextStyle.copyWith(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SeatItem(
+                    status: 0,
+                  ),
+                  SeatItem(
+                    status: 0,
+                  ),
+                ],
+              ),
+            ),
+
+            // SEAT 4
+            Container(
+              margin: EdgeInsets.only(top: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SeatItem(
+                    status: 0,
+                  ),
+                  SeatItem(
+                    status: 2,
+                  ),
+                  Container(
+                    width: 48,
+                    height: 48,
+                    child: Center(
+                      child: Text(
+                        '4',
+                        style: greyTextStyle.copyWith(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SeatItem(
+                    status: 0,
+                  ),
+                  SeatItem(
+                    status: 0,
+                  ),
+                ],
+              ),
+            ),
+
+            //SEAT 5
+            Container(
+              margin: EdgeInsets.only(top: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SeatItem(
+                    status: 0,
+                  ),
+                  SeatItem(
+                    status: 0,
+                  ),
+                  Container(
+                    width: 48,
+                    height: 48,
+                    child: Center(
+                      child: Text(
+                        '5',
+                        style: greyTextStyle.copyWith(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SeatItem(
+                    status: 2,
+                  ),
+                  SeatItem(
+                    status: 0,
+                  ),
                 ],
               ),
             )
