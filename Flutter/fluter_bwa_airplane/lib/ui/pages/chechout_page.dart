@@ -1,6 +1,8 @@
 import 'package:fluter_bwa_airplane/shared/theme.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/booking_detail_item.dart';
+
 class CheckoutPage extends StatelessWidget {
   const CheckoutPage({Key? key}) : super(key: key);
 
@@ -80,9 +82,10 @@ class CheckoutPage extends StatelessWidget {
         ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
-          color: kPrimaryColor,
+          color: kWhiteColor,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // NOTE: DESTINATION TILE
             Row(
@@ -148,6 +151,57 @@ class CheckoutPage extends StatelessWidget {
                 ),
               ],
             ),
+
+            // NOTE: BOOKING DETAILS PAGE
+            Container(
+              margin: EdgeInsets.only(top: 20),
+              child: Text(
+                'Booking Details',
+                style: blackTextStyle.copyWith(
+                  fontSize: 16,
+                  fontWeight: semiBold,
+                ),
+              ),
+            ),
+
+            //NOTE: BOOKING DETAIL ITEM
+            BookingDetailsItem(
+              title: 'Traveler',
+              valueText: '2 person',
+              valueColor: kBlackColor,
+            ),
+            BookingDetailsItem(
+              title: 'Seat',
+              valueText: 'A3, B3',
+              valueColor: kBlackColor,
+            ),
+            BookingDetailsItem(
+              title: 'Insurance',
+              valueText: 'YES',
+              valueColor: kGreenColor,
+            ),
+            BookingDetailsItem(
+              title: 'Refundable',
+              valueText: 'NO',
+              valueColor: kRedColor,
+            ),
+            BookingDetailsItem(
+              title: 'VAT',
+              valueText: '45%',
+              valueColor: kBlackColor,
+            ),
+            BookingDetailsItem(
+              title: 'Price',
+              valueText: 'IDR 8.500.690',
+              valueColor: kBlackColor,
+            ),
+            BookingDetailsItem(
+              title: 'Grand Total',
+              valueText: 'IDR 12.000,000',
+              valueColor: kPrimaryColor,
+            ),
+
+            //
           ],
         ),
       );
