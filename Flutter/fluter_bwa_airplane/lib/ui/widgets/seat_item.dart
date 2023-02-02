@@ -40,6 +40,26 @@ class SeatItem extends StatelessWidget {
       }
     }
 
+    child() {
+      switch (status) {
+        case 0:
+          return SizedBox();
+        case 1:
+          return Center(
+            child: Text(
+              'YOU',
+              style: whiteTextStyle.copyWith(
+                fontWeight: semiBold,
+              ),
+            ),
+          );
+        case 2:
+          return SizedBox();
+        default:
+          return SizedBox();
+      }
+    }
+
     return Container(
       width: 48,
       height: 48,
@@ -51,6 +71,7 @@ class SeatItem extends StatelessWidget {
           width: 2,
         ),
       ),
+      child: child(),
     );
   }
 }
