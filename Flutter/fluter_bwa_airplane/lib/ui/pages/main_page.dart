@@ -1,4 +1,5 @@
 import 'package:fluter_bwa_airplane/ui/pages/home_page.dart';
+import 'package:fluter_bwa_airplane/ui/pages/setting_page.dart';
 import 'package:flutter/material.dart';
 import '../../shared/theme.dart';
 import '../widgets/custom_bottom_navigation_item.dart';
@@ -9,7 +10,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget buildContent() {
-      return HomePage();
+      return SettingPage();
     }
 
     Widget customBottomNavigation() {
