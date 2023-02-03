@@ -6,8 +6,14 @@ import 'package:fluter_bwa_airplane/ui/pages/splash_pages.dart';
 import 'package:flutter/material.dart';
 import 'ui/pages/get_started_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
