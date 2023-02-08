@@ -3,20 +3,20 @@ import 'package:fluter_bwa_airplane/models/destination_model.dart';
 
 class DestinationService {
   CollectionReference _destinationRef =
-      FirebaseFirestore.instance.collection('destination');
+      FirebaseFirestore.instance.collection('destinations');
 
   Future<List<DestinationModel>> fetchDestinations() async {
     try {
       QuerySnapshot result = await _destinationRef.get();
 
-      List<DestinationModel> destination = result.docs.map(
+      List<DestinationModel> destinations = result.docs.map(
         (e) {
           return DestinationModel.fromJson(
               e.id, e.data() as Map<String, dynamic>);
         },
       ).toList();
 
-      return destination;
+      return destinations;
     } catch (e) {
       throw e;
     }
