@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
 import '../../cubit/seat_cubit.dart';
+import '../../models/transaction_model.dart';
 import '../widgets/seat_item.dart';
 import 'chechout_page.dart';
 
@@ -390,20 +391,35 @@ class ChooseSeatPage extends StatelessWidget {
     }
 
     Widget checkoutButton() {
-      return CustomButton(
-        title: 'Continue to Checkout',
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => CheckoutPage(),
+      return BlocBuilder<SeatCubit, List<String>>(
+        builder: (context, state) {
+          return CustomButton(
+            title: 'Continue to Checkout',
+            onPressed: () {
+              int price = destination.price * state.length;
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => CheckoutPage(
+                          TransactionModel(
+                            destination: destination,
+                            amountOfTraveler: state.length,
+                            selectedSeats: state.join(', '),
+                            insurance: true,
+                            refundable: false,
+                            price: price,
+                            grandTotal: price + (price * 0.45).toInt(),
+                          ),
+                        )),
+              );
+            },
+            margin: EdgeInsets.only(
+              top: 30,
+              bottom: 46,
             ),
           );
         },
-        margin: EdgeInsets.only(
-          top: 30,
-          bottom: 46,
-        ),
       );
     }
 
