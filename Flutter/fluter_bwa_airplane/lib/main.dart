@@ -8,6 +8,7 @@ import 'package:fluter_bwa_airplane/ui/pages/main_page.dart';
 import 'package:fluter_bwa_airplane/ui/pages/sign_in_page.dart';
 import 'package:fluter_bwa_airplane/ui/pages/sign_up_page.dart';
 import 'package:fluter_bwa_airplane/ui/pages/splash_pages.dart';
+import 'package:fluter_bwa_airplane/ui/pages/success_checkout_page.dart';
 import 'package:flutter/material.dart';
 import 'ui/pages/get_started_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
           '/sign-in': (context) => SignInPage(),
           '/bonus': (context) => BonusPage(),
           '/main': (context) => MainPage(),
+          '/success': (context) => SuccessCheckoutPage(),
         },
       ),
     );
