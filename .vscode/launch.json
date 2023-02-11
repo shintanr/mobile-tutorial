@@ -1,0 +1,94 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "fluter_bwa_airplane",
+            "cwd": "Flutter\\fluter_bwa_airplane",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "fluter_bwa_airplane (profile mode)",
+            "cwd": "Flutter\\fluter_bwa_airplane",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "fluter_bwa_airplane (release mode)",
+            "cwd": "Flutter\\fluter_bwa_airplane",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_app",
+            "cwd": "Flutter\\flutter_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_app (profile mode)",
+            "cwd": "Flutter\\flutter_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_app (release mode)",
+            "cwd": "Flutter\\flutter_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_bwa_basic",
+            "cwd": "Flutter\\flutter_bwa_basic",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_bwa_basic (profile mode)",
+            "cwd": "Flutter\\flutter_bwa_basic",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_bwa_basic (release mode)",
+            "cwd": "Flutter\\flutter_bwa_basic",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_bwa_chatty",
+            "cwd": "Flutter\\flutter_bwa_chatty",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_bwa_chatty (profile mode)",
+            "cwd": "Flutter\\flutter_bwa_chatty",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_bwa_chatty (release mode)",
+            "cwd": "Flutter\\flutter_bwa_chatty",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "learn_oop_dart",
+            "cwd": "Flutter\\learn_oop_dart",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
