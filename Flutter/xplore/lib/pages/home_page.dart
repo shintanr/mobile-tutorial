@@ -100,7 +100,63 @@ class HomePage extends StatelessWidget {
                   width: 224,
                   height: 55,
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      showModalBottomSheet(
+                          context: context,
+                          builder: (context) {
+                            return Container(
+                              height: 400,
+                              padding: EdgeInsets.symmetric(
+                                vertical: 50,
+                              ),
+                              color: kWhiteColor,
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Update Photo',
+                                    style: TextStyle(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
+                                  Text(
+                                    "Are are only able to change\nthe picture profile once",
+                                    style: TextStyle(
+                                        color: kGreyColor, fontSize: 18),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                  SizedBox(
+                                    height: 30,
+                                  ),
+                                  Container(
+                                    width: 224,
+                                    height: 55,
+                                    child: TextButton(
+                                      onPressed: () {},
+                                      style: TextButton.styleFrom(
+                                          backgroundColor: kGreyColor,
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(16),
+                                          )),
+                                      child: Text(
+                                        'Continue',
+                                        style: TextStyle(
+                                          color: kWhiteColor,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            );
+                          });
+                    },
                     style: TextButton.styleFrom(
                         backgroundColor: kWhiteColor,
                         shape: RoundedRectangleBorder(
